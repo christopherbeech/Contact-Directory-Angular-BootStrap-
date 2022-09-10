@@ -1,4 +1,4 @@
-<!-- <header-component></header-component> -->
+
 <header class="bg-dark">
     <a class="text-light text-uppercase font-weight-bold" href="">Simplified</a>
     <div class="nav-items">
@@ -7,11 +7,10 @@
     </div>
     <button class="btn btn-success p-2" (click)="onClickShowModal()">New Contact</button>
 </header>
-<!-- testing this out!!!! -->
+<div [hidden]="!modal" class="overlay"></div>
 <modal-component [modal]="modal"></modal-component>
 
 <app-contact-list></app-contact-list>
 <footer class="bg-dark">
     <span class="text-light text-uppercase text-center"><p>© {{ date | date : 'yyyy'}} Simplified rights reserved.</p></span>
 </footer>
-<!-- <footer-component></footer-component> -->
