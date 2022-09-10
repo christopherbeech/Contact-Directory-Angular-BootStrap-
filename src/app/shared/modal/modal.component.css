@@ -1,0 +1,16 @@
+.container {
+    margin: 120px auto;
+    border: 6px solid rgb(40 167 69); 
+    padding: 4rem;
+    font-size: 1.3rem;
+}
+
+.wrapper {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    max-width: 800px;
+}

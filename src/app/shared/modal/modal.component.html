@@ -1,0 +1,21 @@
+<div class="container rounded-lg wrapper" *ngIf="modal">
+    <div>
+        <div class="close-modal text-right rounded-lg"><button class="btn btn-danger font-weight-bold text-light" (click)="onClickModal()" >X</button></div>
+        <h1 class="text-center">User Form</h1>
+        <form>
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input id="fullname" name="fullname" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="phonenum">Phone Number</label>
+                <input id="phonenum" name="phonenum" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="notes">Notes</label>
+                <textarea id="notes" name="notes" id="" cols="30" rows="10" class="form-control"></textarea>
+            </div>
+            <button class="btn btn-success p-2">Submit</button>
+        </form>
+    </div>
+</div>
